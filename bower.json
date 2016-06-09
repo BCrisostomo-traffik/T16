@@ -1,0 +1,24 @@
+{
+  "name": "trsc",
+  "description": "Scott's Taking Root static HTML for desktop and mobile",
+  "main": "gulpfile.js",
+  "authors": [
+    "Anthony Sapp",
+    "David Blonski"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/BCrisostomo-traffik/160206-TRSC",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "gsap": "~1.18.2"
+  }
+}

@@ -1,0 +1,132 @@
+.sidebar-menu {
+  background-color: #fff;
+  color: #000;
+  height: 100%;
+  position: fixed;
+  right: -50%;
+  width: 30%;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+  z-index: 999;
+  .container {
+    padding: 0 25px 0px 60px;
+    height: 100%;
+  }
+  .col-md-12 {
+    padding: 0;
+  }
+  &.sidebar-menu-active {
+    right: 0;
+  }
+  li {
+    a {
+      color: #5f5e5e;
+      -webkit-transition: color linear 0.25s;
+      -o-transition: color linear 0.25s;
+      transition: color linear 0.25s;
+
+      &:hover {
+        color: #5f5e5e;
+        background: #ffdd00;
+      }
+
+    }
+    &.current {
+      a {
+        background: #ffdd00;
+        font-family: 'FrutigerLTStd-Bold';
+      }
+    }
+  }
+  .menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      a {
+        font-size: 1em;
+        line-height: 1em;
+        padding: 7px 10px 3px;
+        margin: 5px 0;
+        display: inline-block;
+      }
+    }
+  }
+
+  .close-menu-wrap {
+    height: 25px;
+    margin: 41px 0 30px;
+    position: relative;
+    .cm-sandwich {
+      height: 25px;
+      width: 30px;
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      span {
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: #000;
+
+      }
+
+      .cm-topper {
+        top: 9px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+
+      }
+
+      .cm-bottom {
+        top: 8px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.menu-trigger {
+  cursor: pointer;
+  width: 31px;
+  position: absolute;
+  right: 25px;
+  top: 41px;
+  height: 20px;
+  .sandwich {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 200;
+
+    span {
+      position: relative;
+      display: block;
+      background: #5f5e5e;
+      width: 25px;
+      height: 2px;
+    }
+
+    .sw-topper {
+      top: 0;
+    }
+
+    .sw-bottom {
+      top: 6px;
+    }
+
+    .sw-footer {
+      top: 12px;
+    }
+  }
+}

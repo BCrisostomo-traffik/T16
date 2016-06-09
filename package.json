@@ -1,0 +1,47 @@
+{
+  "name": "trsc",
+  "version": "0.0.3",
+  "description": "Scott's Taking Root static HTML for desktop and mobile",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCrisostomo-traffik/160206-TRSC.git"
+  },
+  "author": "Anthony Sapp, David Blonski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BCrisostomo-traffik/160206-TRSC/issues"
+  },
+  "homepage": "https://github.com/BCrisostomo-traffik/160206-TRSC#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^1.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-processhtml": "^1.1.0",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-uncss": "^1.0.4",
+    "gulp-util": "^3.0.7",
+    "less-plugin-autoprefix": "^1.5.1",
+    "path": "^0.12.7",
+    "run-sequence": "^1.1.5",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^4.2.0"
+  },
+  "dependencies": {
+    "gulp-uncss": "^1.0.5",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
