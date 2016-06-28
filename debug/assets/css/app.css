@@ -622,9 +622,13 @@ img {
 .work-video {
   position: relative;
   margin: auto;
-  max-width: 650px;
+  max-width: 950px;
   display: -ms-flexbox;
   display: flex;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'brightness\'><feColorMatrix type=\'matrix\' values=\'1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0\'/></filter></svg>#brightness");
+  /* Firefox 3.5+ */
+  -webkit-filter: brightness(108.5%);
+  /* Chrome 19+ & Safari 6+ */
 }
 .inline-video.map,
 .work-video.map {
@@ -870,6 +874,7 @@ h4.pad {
 .content a {
   text-decoration: underline;
   color: #616161;
+  margin-top: 1px;
 }
 .service-icons {
   text-align: center;
@@ -886,8 +891,7 @@ h4.pad {
   text-align: center;
 }
 .services img {
-  max-width: 75%;
-  display: inline-block;
+  max-width: 100%;
 }
 .services h2 {
   font-family: 'FrutigerLTStd-Bold';
@@ -1029,6 +1033,9 @@ h2.wwdc {
 }
 p.wwdc2 {
   margin-bottom: 0px;
+}
+.video-adaptation {
+  padding-bottom: 100px;
 }
 .sidebar-menu {
   background-color: #fff;

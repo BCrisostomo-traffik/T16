@@ -426,8 +426,10 @@
 .inline-video, .work-video {
   position: relative;
   margin: auto;
-  max-width: 650px;
+  max-width: 950px;
   display: flex;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'brightness\'><feColorMatrix type=\'matrix\' values=\'1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0 0 0 0 0 1.2 0\'/></filter></svg>#brightness"); /* Firefox 3.5+ */
+  -webkit-filter:brightness(108.5%); /* Chrome 19+ & Safari 6+ */
   &.map {
     max-width: 100%;
   }
@@ -734,7 +736,7 @@ h4 {
   }
   a {
     text-decoration: underline;
-    color: #616161;
+    color: #616161;margin-top: 1px;
   }
 }
 
@@ -752,9 +754,9 @@ h4 {
 .services {
   padding-bottom: 4em;
   text-align: center;
-  img{
-    max-width:75%;
-    display: inline-block;
+  img {
+    max-width: 100%;
+    //display: inline-block;
   }
   h2 {
     font-family: 'FrutigerLTStd-Bold';
@@ -923,4 +925,8 @@ h2.wwdc {
 
 p.wwdc2 {
   margin-bottom: 0px;
+}
+
+.video-adaptation {
+  padding-bottom: 100px
 }
